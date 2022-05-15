@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>KaTys</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+        <link rel="stylesheet" href="https://rawcdn.githack.com/KaKi87/brands.css/473858ec2e3c148039ea5ac173d1ae668f8e33a2/Discord/Discord.css">
+        <style>
+            .app {
+                color: var(--color-lighter);
+                background-color: var(--color-darker);
+                font-size: var(--font-normal);
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .app__header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .app__header__link {
+                display: grid;
+                grid-template-columns: repeat(8, var(--size-normal));
+                font-size: var(--size-big);
+            }
+            .app__header__link__letter {
+                text-align: center;
+                transition: color 0.25s;
+            }
+            .app__header__link__letter--secondary,
+            .app__header:hover .app__header__link__letter {
+                color: var(--color-medium);
+            }
+            .app__header__link:hover .app__header__link__letter {
+                color: var(--color-lighter);
+            }
+            .app__main__menu {
+                font-size: var(--font-big);
+            }
+            .app__main__menu__item__link {
+                border-bottom: 1px dotted var(--color-light);
+            }
+            .app__main__menu__item__link:hover {
+                border-bottom-style: solid;
+            }
+        </style>
+    </head>
+    <body class="app">
+        <header class="app__header">
+            <a
+                class="app__header__link"
+                href="https://kaki87.net"
+                target="_blank"
+            >
+                <span class="app__header__link__letter" style="grid-column: 4">K</span>
+                <span class="app__header__link__letter" style="grid-column: 5">a</span>
+                <span class="app__header__link__letter app__header__link__letter--secondary" style="grid-column: 6">K</span>
+                <span class="app__header__link__letter app__header__link__letter--secondary" style="grid-column: 7">i</span>
+            </a>
+            <a
+                href="https://miosotys.com"
+                class="app__header__link"
+                target="_blank"
+            >
+                <span class="app__header__link__letter app__header__link__letter--secondary" style="grid-column: 1">M</span>
+                <span class="app__header__link__letter app__header__link__letter--secondary" style="grid-column: 2">i</span>
+                <span class="app__header__link__letter app__header__link__letter--secondary" style="grid-column: 3">o</span>
+                <span class="app__header__link__letter app__header__link__letter--secondary" style="grid-column: 4">s</span>
+                <span class="app__header__link__letter app__header__link__letter--secondary" style="grid-column: 5">o</span>
+                <span class="app__header__link__letter" style="grid-column: 6">T</span>
+                <span class="app__header__link__letter" style="grid-column: 7">y</span>
+                <span class="app__header__link__letter" style="grid-column: 8">s</span>
+            </a>
+        </header>
+        <main class="app__main">
+            <ul class="app__main__menu">
+                <li class="app__main__menu__item">
+                    <a
+                        class="app__main__menu__item__link"
+                        href="https://netdata.katys.cf"
+                        target="_blank"
+                    >Netdata</a>
+                </li>
+            </ul>
+        </main>
+        <footer class="app__footer">
+            &copy; 2022 — KaKi87
+        </footer>
+    </body>
+</html>
